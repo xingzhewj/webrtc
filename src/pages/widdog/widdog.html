@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/widdog.css">
+    <script src="https://cdn.wilddog.com/sdk/js/2.3.1/wilddog-video-call.js"></script>    
+    <script src="https://cdn.wilddog.com/sdk/js/2.5.17/wilddog-auth.js"></script>
+</head>
+<body>
+    <div class="video-wrap">
+        <div class="video-client-wrap">
+            <p>本地视频</p>
+            <video src="" id="client_video" class="client-video" autoplay></video>
+            <p>
+                <span>用户id:</span>
+                <span id="uid_client_text">暂无</span>
+            </p>
+        </div>
+        <div class="video-remote-wrap">
+            <p>远端视频</p>
+            <video src="" id="remote_video" class="remote-video" autoplay></video>
+            <p>
+                <span>用户id:</span>
+                <span id="uid_remote_text">暂无</span>
+            </p>
+        </div>
+    </div>
+    <div class="operate-wrap">
+        <input type="text" id="uid" placeholder="请输入远程用户id(uid)">
+        <button id="connect_btn">连接</button>
+    </div>
+    <div class="reocrd-container">
+        <div>
+            <button id="record_btn">开始录制</button>
+            <button id="record_end_btn">结束录制</button>
+            <button id="record_play_btn">播放录像</button>
+            <span id="time_text" class="time-text"></span>
+        </div>
+        <div>
+            <video src="" autoplay id="record_video" class="record-video" controls="controls" poster="./css/timg.jpeg"></video>
+        </div>
+    </div>
+    <script src="./widdog.js"></script>
+</body>
+</html>

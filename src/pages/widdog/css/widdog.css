@@ -1,0 +1,36 @@
+.video-wrap,
+.operate-wrap {
+    text-align: center;
+}
+.operate-wrap {
+    height: 50px;
+    line-height: 50px;
+}
+.video-client-wrap,
+.video-remote-wrap {
+    display: inline-block;
+}
+.video-client-wrap p,
+.video-remote-wrap p {
+    margin: 0;
+}
+.client-video,
+.remote-video,
+.record-video {
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    border: 1px solid #464545;
+}
+
+
+/* 录像 */
+.reocrd-container {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding: 20px;
+}
+.time-text {
+    display: inline-block;
+    width: 150px;
+}
